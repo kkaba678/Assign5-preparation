@@ -2,7 +2,7 @@
 
 public class Calculator {
 
-	public Calculator() {
+	public Calculator() throws ArithmeticException {
 	}
 	/**
 	 * Receives two double values and performs an action. If a is less than b, a*b, otherwise, a/b will be returned.
@@ -15,7 +15,8 @@ public class Calculator {
 		double result = 0;
 		if (a<b) {
 			result = a * b;
-		}else {
+		}
+		else {
 			result = a/b;
 		}
 		return result;
