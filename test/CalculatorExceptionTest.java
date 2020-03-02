@@ -30,7 +30,7 @@ class CalculatorExceptionTest {
 
 	@Test
 	void testBZero() {
-		assertThrows(ArithmeticException.class, 
+		Assertions.assertThrows(ArithmeticException.class, 
 				() -> calculator.action(5,0)
 		);
 		
